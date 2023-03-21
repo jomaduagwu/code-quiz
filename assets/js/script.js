@@ -138,7 +138,7 @@ function displayQuestion() {
     clearInterval(timerInterval);
 
     //display results at the end of the quiz
-    resultsEl.style.display="block";
+    resultsEl.style.display = "block";
 }
 }
 
