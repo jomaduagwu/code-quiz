@@ -136,9 +136,6 @@ function displayQuestion() {
     endQuiz();
       // stop timer
     clearInterval(timerInterval);
-
-    //display results at the end of the quiz
-    resultsEl.style.display = "block";
 }
 }
 
@@ -151,6 +148,8 @@ function endQuiz () {
     quizContainer.style.display = "none";
     choicesEl.style.display = "none";
     questionEl.style.display = "none";
+    
+    //display results at the end of the quiz
     resultsEl.style.display = "block";
 
     // show final score and save to local storage
