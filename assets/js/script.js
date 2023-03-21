@@ -68,13 +68,11 @@ window.onload = function () {
 var startBtn = document.querySelector(".start-button");
 startBtn.addEventListener("click", startQuiz);
 
-
 // set a function to hide the quiz info and start the timer once the 'start quiz' button is selected
 function startQuiz ()   {
     // hide quiz info once quiz is started
     var quizInfo = document.querySelector(".quiz-info");
     quizInfo.style.display = "none";
-    // resultsEl.style.display="none"; //hide results container until the end of the quiz
 
     //start timer
     timerInterval = setInterval (function () {
@@ -135,8 +133,6 @@ function displayQuestion() {
     clearInterval(timerInterval);
 }
 }
-
-
 
 // function to end the quiz
 function endQuiz () {
