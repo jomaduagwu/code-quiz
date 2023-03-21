@@ -62,11 +62,14 @@ var resultsEl = document.querySelector(".results-container");
 // user should be able to view high scores
 // renderHighScores()
 
+// hide the results container on page load 
+window.onload = function () {
+    document.querySelector(".results-container").style.display = "none";
+}
+
 // add event listener for start button
 var startBtn = document.querySelector(".start-button");
 startBtn.addEventListener("click", startQuiz);
-
-// on page load, want to hide the final score and form to input initials
 
 
 // set a function to hide the quiz info and start the timer once the 'start quiz' button is selected
@@ -172,17 +175,3 @@ submitBtn.addEventListener("click", function (event){
     localStorage.setItem("score", score);
       }
 }); 
-// function renderHighScores () {
-//     var initials = localStorage.getItem("initials");
-//     var score = localStorage.getItem("score");
-
-// }
-
-// var submitBtn.addEventListener('click', function () {
-
-// })
-// time left shouldn't be displayed
-// all done, final score and initials should only be displayed at the end of the quiz
-// need to
-
-// var initialsInput = document.querySelector("#initials");
