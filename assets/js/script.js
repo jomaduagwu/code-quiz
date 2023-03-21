@@ -134,8 +134,11 @@ function displayQuestion() {
 
 } else {
     endQuiz();
+    // stop timer
     clearInterval(timerInterval);
-    // resultsEl.style.display="display";
+    
+    // display the results
+    resultsEl.style.display="block";
 }
 }
 
