@@ -151,6 +151,7 @@ function endQuiz () {
     quizContainer.style.display = "none";
     choicesEl.style.display = "none";
     questionEl.style.display = "none";
+    resultsEl.style.display = "block";
 
     // show final score and save to local storage
     finalScoreEl.textContent = " " + score;
