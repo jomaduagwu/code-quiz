@@ -134,13 +134,14 @@ function displayQuestion() {
 
 } else {
     endQuiz();
-    // stop timer
+      // stop timer
     clearInterval(timerInterval);
-    
-    // display the results
+
+    //display results at the end of the quiz
     resultsEl.style.display="block";
 }
 }
+
 
 
 // function to end the quiz
