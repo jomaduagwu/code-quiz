@@ -129,10 +129,14 @@ function displayQuestion() {
 
 } else {
     endQuiz();
-      // stop timer
+    // stop timer
     clearInterval(timerInterval);
+
+    //display results at the end of the quiz
+    resultsEl.style.display="block";
 }
 }
+
 
 // function to end the quiz
 function endQuiz () {
@@ -141,14 +145,40 @@ function endQuiz () {
     quizContainer.style.display = "none";
     choicesEl.style.display = "none";
     questionEl.style.display = "none";
-    
-    //display results at the end of the quiz
-    resultsEl.style.display = "block";
 
     // show final score and save to local storage
     finalScoreEl.textContent = " " + score;
     
 }
+
+// var submitBtn = document.querySelector("#submit");
+// var initialsInput = document.querySelector("#initials");
+// var submit = localStorage.getItem("submit");
+// // initials.textContent = initials;
+// // score.textContent = score;
+// console.log(initialsInput);
+
+// submitBtn.addEventListener("click", function (event){ 
+//     // event.preventDefault();
+
+//     var initialsInput = document.querySelector("#initials").value;
+//     var score = document.querySelector("#final-score").value;
+
+//     if (initials === "") {
+//         displayMessage("Error", "Initials cannot be blank");
+//       } else {
+//         displayMessage("Success", "High Score saved successfully");
+
+//     localStorage.setItem("initials", initials);
+//     localStorage.setItem("score", score);
+//       }
+// }); 
+// show high scores
+// function renderHighScores () {
+//     var initials = localStorage.getItem("initials");
+//     var score = localStorage.getItem("score");
+
+// }
 
 // add submitted scores to scores array
 var scores = [];
