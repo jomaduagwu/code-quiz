@@ -151,35 +151,6 @@ function endQuiz () {
     
 }
 
-// var submitBtn = document.querySelector("#submit");
-// var initialsInput = document.querySelector("#initials");
-// var submit = localStorage.getItem("submit");
-// // initials.textContent = initials;
-// // score.textContent = score;
-// console.log(initialsInput);
-
-// submitBtn.addEventListener("click", function (event){ 
-//     // event.preventDefault();
-
-//     var initialsInput = document.querySelector("#initials").value;
-//     var score = document.querySelector("#final-score").value;
-
-//     if (initials === "") {
-//         displayMessage("Error", "Initials cannot be blank");
-//       } else {
-//         displayMessage("Success", "High Score saved successfully");
-
-//     localStorage.setItem("initials", initials);
-//     localStorage.setItem("score", score);
-//       }
-// }); 
-// show high scores
-// function renderHighScores () {
-//     var initials = localStorage.getItem("initials");
-//     var score = localStorage.getItem("score");
-
-// }
-
 // add submitted scores to scores array
 var scores = [];
 document.getElementById("submit").addEventListener("click", function () {
